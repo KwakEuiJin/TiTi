@@ -15,6 +15,7 @@ class TimerFragment : Fragment() {
     private var _binding: FragmentTimerBinding? = null
     private val binding get() = _binding!!
     private var timer: Timer? = null
+    private var time = 0
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,8 +42,7 @@ class TimerFragment : Fragment() {
 
     private fun startTimer() {
         //TODO DB에서 시간을 꺼내와서 타이머 시작
-        var time = 0
-        if(timer == null) {
+        if (timer == null) {
             timer = timer(initialDelay = 0, period = 1000) {
                 val second = (time / 1000) % 60
                 val minute = ((time / 1000) / 60) % 60
