@@ -11,7 +11,7 @@ class MainViewPagerAdapter(fragment: FragmentActivity): FragmentStateAdapter(fra
     override fun createFragment(position: Int): Fragment = when(position) {
         0 -> TimerFragment()
         1 -> StopWatchFragment()
-        2 -> Todofragment()
+        2 -> TodoFragment()
         3 -> LogFragment()
         else -> SettingFragment()
     }
