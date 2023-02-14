@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.timertiti.titi.presentation.*
+import com.timertiti.titi.presentation.todo.TodoFragment
 
 class MainViewPagerAdapter(fragment: FragmentActivity): FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int = 5

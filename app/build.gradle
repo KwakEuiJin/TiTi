@@ -57,7 +57,7 @@ dependencies {
     def roomVersion = "2.4.1"
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
-    implementation("androidx.room:room-ktx:$roomVersion")
+    implementation "androidx.room:room-ktx:$roomVersion"
 
     //coroutine
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
@@ -65,5 +65,9 @@ dependencies {
     //hilt
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //viewModel
+    implementation 'androidx.activity:activity-ktx:1.1.0'
+    implementation 'androidx.fragment:fragment-ktx:1.2.5'
 
 }
